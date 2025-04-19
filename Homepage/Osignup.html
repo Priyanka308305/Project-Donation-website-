@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HopeHarbor - Organization Sign Up</title>
+    <link href="Osignup.css" rel="stylesheet">
+   
+</head>
+<body>
+    <!-- Signup Section -->
+            <div class="signup-form-container">
+                <div class="signup-header">
+                    <h2>Register Your Organization</h2>
+                    <p>Join our community of 250+ organizations making positive change</p>
+                </div>
+                
+                <form class="signup-form">
+                    <div class="form-group">
+                        <label for="org-name">Organization Name</label>
+                        <input type="text" id="org-name" placeholder="Enter your organization name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="org-id">Organization ID/Registration Number</label>
+                        <input type="text" id="org-id" placeholder="Enter official registration number" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="org-type">Organization Type</label>
+                        <select id="org-type" class="country-select" required>
+                            <option value="" disabled selected>Select organization type</option>
+                            <option value="ngo">Non-Governmental Organization (NGO)</option>
+                            <option value="nonprofit">Nonprofit Organization</option>
+                            <option value="foundation">Foundation</option>
+                            <option value="charity">Charitable Trust</option>
+                            <option value="social">Social Enterprise</option>
+                            <option value="community">Community-Based Organization</option>
+                            <option value="educational">Educational Institution</option>
+                            <option value="religious">Religious Organization</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Official Email Address</label>
+                        <input type="email" id="email" placeholder="Enter organization email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="org-description">Organization Description</label>
+                        <textarea id="org-description" placeholder="Briefly describe what your organization does..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select id="country" class="country-select" required>
+                            <option value="" disabled selected>Select your country</option>
+                            <option value="af">Afghanistan</option>
+                            <option value="al">Albania</option>
+                            <option value="dz">Algeria</option>
+                            <option value="ar">Argentina</option>
+                            <option value="au">Australia</option>
+                            <option value="at">Austria</option>
+                            <option value="bd">Bangladesh</option>
+                            <option value="be">Belgium</option>
+                            <option value="br">Brazil</option>
+                            <option value="ca">Canada</option>
+                            <option value="cl">Chile</option>
+                            <option value="cn">China</option>
+                            <option value="co">Colombia</option>
+                            <option value="dk">Denmark</option>
+                            <option value="eg">Egypt</option>
+                            <option value="fr">France</option>
+                            <option value="de">Germany</option>
+                            <option value="gr">Greece</option>
+                            <option value="in">India</option>
+                            <option value="id">Indonesia</option>
+                            <option value="ir">Iran</option>
+                            <option value="it">Italy</option>
+                            <option value="jp">Japan</option>
+                            <option value="ke">Kenya</option>
+                            <option value="mx">Mexico</option>
+                            <option value="ng">Nigeria</option>
+                            <option value="pk">Pakistan</option>
+                            <option value="ph">Philippines</option>
+                            <option value="pl">Poland</option>
+                            <option value="ru">Russia</option>
+                            <option value="sa">Saudi Arabia</option>
+                            <option value="sg">Singapore</option>
+                            <option value="za">South Africa</option>
+                            <option value="kr">South Korea</option>
+                            <option value="es">Spain</option>
+                            <option value="se">Sweden</option>
+                            <option value="ch">Switzerland</option>
+                            <option value="th">Thailand</option>
+                            <option value="tr">Turkey</option>
+                            <option value="ae">United Arab Emirates</option>
+                            <option value="gb">United Kingdom</option>
+                            <option value="us">United States</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="payment-gateway">Payment Gateway Link</label>
+                        <input type="text" id="payment-gateway" placeholder="Enter your payment gateway URL" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="org-website">Organization Website <span class="optional">(Optional)</span></label>
+                        <input type="url" id="org-website" placeholder="Enter your website URL">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="password-container">
+                            <input type="password" id="password" placeholder="Create a strong password" required>
+                            <i class="fas fa-eye-slash toggle-password"></i>
+                        </div>
+                        
+                    
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <div class="password-container">
+                            <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                            <i class="fas fa-eye-slash toggle-password"></i>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="terms-privacy">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>. I confirm that my organization information is accurate and valid.</label>
+                    </div>
+                    
+                    <button type="submit" class="signup-btn">Register Organization</button>
+                    
+                    <div class="login-link">
+                        <p>Already registered? <a href="login.html">Log in to your organization account</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    

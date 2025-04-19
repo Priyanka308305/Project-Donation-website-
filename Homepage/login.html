@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HopeHarbor - Donor Login</title>
+    <link href="login.css" rel="stylesheet">
+  
+</head>
+<body>
+    <!-- Navbar -->
+   
+    
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="login-container">
+            <div class="login-image">
+                <h2>Welcome Back to HopeHarbor</h2>
+                <p>Your generosity is making a real difference in the lives of children around the world. Log in to see the impact of your donations and continue your journey of giving.</p>
+                
+                <div class="impact-stats">
+                    <div class="stat-item">
+                        <h3>45K+</h3>
+                        <p>Children Helped</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>120+</h3>
+                        <p>Countries Reached</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>98%</h3>
+                        <p>Funds to Direct Aid</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="login-form-container">
+                <div class="login-header">
+                    <h2>Login to Your Donor Account</h2>
+                    <p>Access your donation history and impact reports</p>
+                </div>
+                
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                    
+                    <div class="remember-forgot">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    
+                    <button type="submit" class="login-btn">Login</button>
+                    
+                    <div class="social-login">
+                        <p>Or login with</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon google"><i class="fab fa-google"></i></a>
+                            <a href="#" class="social-icon apple"><i class="fab fa-apple"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="signup-link">
+                        <p>Don't have an account? <a href="#">Sign up as a donor</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    
+    <script>
+        // Simple JavaScript for form validation
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginForm = document.querySelector('.login-form');
+            
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+                
+                if (email && password) {
+                    // In a real implementation, this would handle the login process
+                    alert('Login successful! Redirecting to your donor dashboard...');
+                } else {
+                    alert('Please fill in all required fields.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
